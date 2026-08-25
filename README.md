@@ -61,3 +61,20 @@ The domain is a unit square $[0, 1] \times [0, 1]$ subjected to Dirichlet bounda
 ```bash
 git clone https://github.com/hector-0208/2d_temp_distribution_using_FDM.git
 cd 2d_temp_distribution_using_FDM
+```
+### 2. Install dependencies
+```bash
+pip install -r requirements.txt
+```
+### 3. Run
+```bash
+python main.py
+```
+## Sample Output
+
+* Grid Resolution: $51 \times 51$ ($h = 0.02$)
+* Convergence Criterion: $\epsilon = 10^{-8}$
+* Iterations to Convergence: ~2,330 iterations
+### Running main.py generates two plots:
+1. Semi-log convergence plot showing residual decay $\max |\Delta T|$ per iteration.
+2. Filled contour plot (contourf) of the steady-state thermal distribution $T(x,y)$.
